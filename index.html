@@ -1,0 +1,282 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Random Pokemon Generator</title>
+
+  <meta name="description" content="Random Pokemon generator">
+  <meta name="generator" content="Random Pokemon Generator">
+
+  <!-- Apple Stuff -->
+  <!-- <link rel="apple-touch-icon" href="https://grapedrop.com/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Template More about me [Preview]"> -->
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Random Pokemon Generator">
+  <meta itemprop="description"
+        content="Random Pokemon Generator helps create random Pokemon teams. A Pokemon team comprising of 6 Pokemon elements is being created using Pokemon randomizer algorithm.">
+  <meta itemprop="image" content="">
+
+  <!-- MS Tile - for Microsoft apps-->
+  <meta name="msapplication-TileImage" content="">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Random Pokemon Generator">
+  <meta property="og:description" content="Random Pokemon Generator to create teams of 6 player using Pokemon Randomizer Algorithm">
+  <meta property="og:image" content="">
+
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+        content="Random Pokemon Generator to create teams of 6 player using Pokemon Randomizer Algorithm. Easy and ready to go pokemon team generator">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <link rel="icon" type="image/png" href="resources/ic__pokemon.png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      "url": "https://generatepokemon.com/",
+      "description": "",
+      "name": "Random Pokemon generator by AJ",
+      "image": ""
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/main-style.css">
+
+
+
+  <style data-css-anim="">
+    [data-anim-type]:not([data-anim-done]) {
+      opacity: 0;
+    }
+  </style>
+
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+<section id="i5un" class="gpd-section">
+  <div id="ialh" class="gpd-container">
+    <div id="ipls" data-anim-type="fadeIn" data-anim-br="414" class="gdp-row" data-anim-done="1"
+         style="animation-name: fadeIn;">
+      <div id="i5hl" class="cell">
+        <h1 id="iqkg" class="gpd-header">Random Pokémon generator</h1>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="iz0i" class="gpd-section">
+  <div id="Form-input" data-anim-type="fadeInUp" data-anim-br="411" class="gpd-container" data-anim-done="1"
+       style="animation-name: fadeInUp;">
+    <form method="post" id="iiiuf" data-redirect="" class="form" onsubmit="initPokemonGeneration(); return false;">
+      <div data-form-state="success" id="ircyx" class="state-success" style="display: none;">Thanks! We received your
+        request</div>
+      <div data-form-state="error" id="i1kyl" class="state-error" style="display: none;">An error occurred on
+        processing your request, try again!</div>
+      <!-- <select type="text" name="n" id="n" class="select">
+        <option value="1"> Total</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select> -->
+      <div id="form-group-regions" class="form-group"><select type="text" name="region" id="region" class="select">
+        <option value="all">All Regions</option>
+        <option value="kanto" title="Generation 1 (Red, Blue, and Yellow)">Kanto</option>
+        <option value="johto" title="Generation 2 (Gold, Silver, and Crystal)">Johto</option>
+        <option value="hoenn" title="Generation 3 (Ruby, Sapphire, and Emerald)">Hoenn</option>
+        <option value="sinnoh" title="Generation 4 (Diamond, Pearl)">Sinnoh</option>
+        <option value="sinnoh_pt" title="Generation 4 (Platinum)">Sinnoh (Plat.)</option>
+        <option value="unova" title="Generation 5 (Black and White)">Unova</option>
+        <option value="unova_b2w2" title="Generation 5 (Black 2 and White 2)">Unova (B2W2)</option>
+        <option value="kalos" title="Generation 6 (X and Y)">Kalos</option>
+        <option value="alola" title="Generation 7 (Sun and Moon)">Alola</option>
+        <option value="alola_usum" title="Generation 7 (Ultra Sun and Ultra Moon)">Alola (USUM)</option>
+        <option value="galar" title="Generation 8 (Sword and Shield)">Galar</option>
+      </select>
+
+        <div id="form-group-type" class="form-group">
+          <select type="text" name="type" id="type" class="select">
+            <option value="all">All Types</option>
+            <option value="bug">Bug</option>
+            <option value="dark">Dark</option>
+            <option value="dragon">Dragon</option>
+            <option value="electric">Electric</option>
+            <option value="fairy">Fairy</option>
+            <option value="fighting">Fighting</option>
+            <option value="fire">Fire</option>
+            <option value="flying">Flying</option>
+            <option value="ghost">Ghost</option>
+            <option value="grass">Grass</option>
+            <option value="ground">Ground</option>
+            <option value="ice">Ice</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Poison</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="steel">Steel</option>
+            <option value="water">Water</option>
+          </select></div>
+      </div>
+
+      <div id="irvug" class="gdp-row gpd-grid">
+        <div id="imk4p" class="cell gpd-clm">
+          <div id="chbx_sprite" class="form-group"><input type="checkbox" name="natures" value="1" checked=""
+                                                          id="natures" class="checkbox"><label id="idsai" class="checkbox-label">Natures</label></div>
+        </div>
+
+        <div id="iuzg6" class="cell gpd-clm">
+          <div id="intlr" class="form-group">
+            <input type="checkbox" name="nfes" value="1" checked="" id="nfes" class="checkbox">
+            <label id="ieuhf" class="checkbox-label">NFEs</label></div>
+        </div>
+
+        <div id="injcj" class="cell gpd-clm">
+          <div id="iajlv" class="form-group"><input type="checkbox" name="ubers" value="1" checked="" id="ubers"
+                                                    class="checkbox"><label id="ia1ya" class="checkbox-label">Ubers</label></div>
+        </div>
+        <div id="iv3nx" class="cell gpd-clm" hidden>
+          <div id="ifu8f" class="form-group"><input type="checkbox" name="sprites" value="1" checked="" id="sprites"
+                                                    class="checkbox"><label id="ii0bf" class="checkbox-label">Sprites</label></div>
+        </div>
+
+        <div id="im3fy" class="cell gpd-clm">
+          <div id="i1jyo" class="form-group"><input type="checkbox" name="forms" value="1" checked="" id="forms"
+                                                    class="checkbox"><label id="ir6fl" class="checkbox-label">Forms</label></div>
+        </div>
+
+      </div>
+      <!-- </div><button type="submit" id="iswst" class="button">Generate</button> -->
+
+      <div id="irvug" class="gdp-row gpd-grid">
+        <div id="imk4p" class="cell gpd-clm">
+          <button type="submit"  class="button">Generate</button>
+        </div>
+      </div>
+
+
+      <div id="im7dh" class="form-group"></div>
+    </form>
+
+    <div id="main_result_container" hidden>
+      <!-- <div id="ifhzb" class="gpd-divider" hidden></div> -->
+      <div id="ijpwg" class="gpd-text" hidden><strong><span id="span_result_title" style="color:#2c3e50">Pokémon
+              Generated</span></strong></div>
+      <!-- <div id="ihpzk" class="gpd-divider" hidden></div> -->
+      <div id="has_result_container">
+        <div id="grid_result" class="gdp-row gpd-grid">
+          <div id="i34hb" class="cell gpd-clm">
+            <!-- Top column  is3w9 ijmqt i7g8t ieyoi iiv1g i7n1g remove these-->
+            <div id="top_result_row" class="gdp-row gpd-grid">
+              <div id="result_card_1" class="cell gpd-clm card-property">
+                <div id="isuyl" class="gpd-image-block"><img src="../resources/normal/1.png" id="result_img_1"
+                                                             class="result_img1"> </div>
+                <div id="result_title_1" class="gpd-text gpd-text-result"><strong><span
+                        style="color:#2c3e50;">1</span></strong><br></div>
+              </div>
+
+
+              <div id="result_card_2" class="cell gpd-clm card-property">
+                <div id="i09wi" class="gpd-image-block"><img src="../resources/normal/1.png" id="result_img_2"
+                                                             class="result_img2"> </div>
+                <div id="result_title_2" class="gpd-text gpd-text-result"><strong><span
+                        style="color:#2c3e50;">2</span></strong><br></div>
+              </div>
+              <div id="result_card_3" class="cell gpd-clm card-property">
+                <div id="imxcw" class="gpd-image-block"> <img src="../resources/normal/1.png" id="result_img_3"
+                                                              class="result_img1"> </div>
+                <div id="result_title_3" class="gpd-text gpd-text-result"><strong><span
+                        style="color:#2c3e50;">3</span></strong><br></div>
+              </div>
+            </div>
+
+            <!-- Bottom column -->
+            <div id="bottom_result_row" class="gdp-row gpd-grid">
+              <div id="result_card_4" class="cell gpd-clm card-property">
+                <div id="iixf2" class="gpd-image-block"> <img src="../resources/normal/1.png" id="result_img_4"
+                                                              class="result_img1"> </div>
+                <div id="result_title_4" class="gpd-text gpd-text-result"><strong><span
+                        style="color:#2c3e50;">4</span></strong><br></div>
+              </div>
+              <div id="result_card_5" class="cell gpd-clm card-property">
+                <div id="i3bfx" class="gpd-image-block"> <img src="../resources/normal/1.png" id="result_img_5"
+                                                              class="result_img2"></div>
+                <div id="result_title_5" class="gpd-text gpd-text-result"><strong><span
+                        style="color:#2c3e50;">5</span></strong><br></div>
+              </div>
+              <div id="result_card_6" class="cell gpd-clm card-property">
+                <div id="ia4n2" class="gpd-image-block"> <img src="../resources/normal/1.png" id="result_img_6"
+                                                              class="result_img1"></div>
+                <div id="result_title_6" class="gpd-text gpd-text-result"><strong><span
+                        style="color:#2c3e50;">6</span></strong><br></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  a.page-brand-badge {
+    border-radius: 3px !important;
+    background-color: white !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px 7px !important;
+    font-family: Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    text-decoration: none !important;
+    color: #555 !important;
+    transition: box-shadow 0.25s !important;
+  }
+
+  a.page-brand-badge:hover {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+</style>
+<a href="" target="_blank" class="page-brand-badge"
+   style="bottom: 10px !important; left: 10px !important; display: block !important; opacity: 1 !important; visibility: visible !important; position: fixed !important;">
+  <svg class="logo-circ" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg"
+       style="width:13px; height:13px; vertical-align: middle; margin-right: 3px; margin-top: -2px;">
+    <defs>
+      <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+        <stop stop-color="#EAB3D5" offset="0%"></stop>
+        <stop stop-color="#D06E9A" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g>
+        <circle fill="url(#linearGradient-2)" cx="251" cy="251" r="250"></circle>
+        <path
+                d="M244.664082,104.558858 L162.460627,248.205767 C145.186418,278.574619 143.852224,317.189676 162.460627,349.706818 C190.433829,398.588565 252.659,415.493783 301.444357,387.464755 C350.229714,359.436081 367.101474,297.087868 339.127919,248.205413 L256.924464,104.558858 C254.209082,99.813714 247.379111,99.813714 244.664082,104.558858 Z"
+                fill="#FFFFFF" fill-rule="nonzero"></path>
+      </g>
+    </g>
+  </svg>
+  Made with Love by AJ </a>
+<script>
+</script>
+<script src="/js/index.js"></script>
+
+
+
+</body>
+
+</html>
