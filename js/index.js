@@ -3,7 +3,6 @@ const PATH_SPRITES_SHINY = '../resources/shiny/'; //'sprites/png/shiny/'
 const EXTENSIONSPRITE = '.png';
 const KEY_STORAGE = "options";
 
-
 function initPokemonGeneration() {
 	console.log("generateRandom called");
 	var userOptions = getUserOptions();
